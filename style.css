@@ -1,0 +1,11 @@
+#map {
+    height: 450px;
+    width: 80%;
+    margin: 0 auto;
+}
+#header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
