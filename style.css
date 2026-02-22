@@ -27,3 +27,27 @@
     margin: 0;
     background-color: #ece7ce;
 }
+#future{
+    margin: 50px;
+    padding: 20px;
+}
+
+#aboutUs{
+    margin: 50px;
+    padding: 20px;
+    
+
+}
+#h2_future{
+    font-size: 54px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #c7522a;
+}
+#h2_about{
+    font-size: 54px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    color: #c7522a;
+    text-align: right;
+}
