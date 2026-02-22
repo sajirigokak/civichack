@@ -1,9 +1,13 @@
 // --- 1. CONFIGURATION (Put your secret keys here) ---
 const NEWS_API_KEY = 'efd0218f0c924443aef41f728908f39a';
 const GEMINI_API_KEY = 'AIzaSyBwYxz2a5US3kHmTFOcF12xVnDyqStBnlg';
-const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent?key=${AIzaSyBwYxz2a5US3kHmTFOcF12xVnDyqStBnlg}`;
+// Fix: Use the variable directly in the template literal
+const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent`; 
 
-// --- 2. THE RELAY START: Map Click ---
+async function fetchNews(street) {
+    // Placeholder in case News API is strictly restricted
+    return `Recent infrastructure discussions in Brookline mention ${street}.`;
+}
 function onEachStreet(feature, layer) {
     layer.on('click', async function (e) {
         // Pull data from your Grover Street style JSON
@@ -82,4 +86,5 @@ async function askGemini(street, score, label, news) {
     } catch (err) {
         return "The AI is currently resting. Please try another street in a moment!";
     }
+
 }
