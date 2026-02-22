@@ -21,6 +21,7 @@
     font-size: 16px;
     font-family: raleway, sans-serif;
     padding: 20px;
+    color: #32150b;
 }
 #body{
     padding: 0;
@@ -30,19 +31,34 @@
 #future{
     margin: 50px;
     padding: 20px;
+    color: #32150b;
+    font-size: 18px;
+    font-weight: semi-bold;
 }
 
 #aboutUs{
     margin: 50px;
     padding: 20px;
-    
+    color: #32150b;
+    font-size: 18px;
+    font-weight: semi-bold;
 
 }
+
 #h2_future{
     font-size: 54px;
     font-family: Roboto, sans-serif;
     font-weight: bold;
     color: #c7522a;
+    animation-name: comeUp;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-fill-mode: forwards ;
+}
+@keyframes comeUp{
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
 }
 #h2_about{
     font-size: 54px;
@@ -50,4 +66,14 @@
     font-weight: bold;
     color: #c7522a;
     text-align: right;
+     animation-name: comeUp;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-fill-mode: forwards ;
+}
+#line{
+    border: 1px solid #c7522a;
+    margin: 50px;
+    align-items: left;
 }

@@ -45,4 +45,6 @@ getColorByLabel = function(label) {
         default:             return "#999999";
     }
 };
-
+addEventListener(getElementByTagName('h2'), function(){
+    h2.style.position = 1 - (window.scrollY / 100) * 0.5;
+});
