@@ -1,4 +1,4 @@
-var map = L.map('map').setView([42.326, -71.122], 13);
+var map = L.map('map').setView([42.326, -71.122], 14);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -15,7 +15,7 @@ fetch('pavements.geojson')
                 return {
                     //call our function to get color based on label
                     color: getColorByLabel(feature.properties.label),
-                    weight: 3,
+                    weight: 7,
                     opacity: 0.8
                 };
             },
@@ -34,13 +34,13 @@ fetch('pavements.geojson')
     //change color based on pavement condition
 getColorByLabel = function(label) {
     switch (label) {
-        case 'Good':         return "#255b0e";
-        case 'Satisfactory': return "#6dd44b";
-        case 'Fair':         return "#f6ff00";
-        case 'Poor':         return "#f3ce2b";
-        case 'Very Poor':    return "#da641a";
-        case 'Serious':      return "#f63310";
-        case 'Failed':       return "#990909";
+        case 'Good':         return "#272f21";
+        case 'Satisfactory': return "#518f50";
+        case 'Fair':         return "#e3dcba";
+        case 'Poor':         return "#cba158";
+        case 'Very Poor':    return "#c7522a";
+        case 'Serious':      return "#7b0b09";
+        case 'Failed':       return "#4f0404";
         case 'Not Scored':   return "#808080";
         default:             return "#999999";
     }
